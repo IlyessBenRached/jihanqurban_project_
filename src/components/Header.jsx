@@ -4,18 +4,20 @@ import Container from "./Container";
 import Logo from "./Logo";
 import NavLinks from "./NavLinks";
 import Button from "./Button";
+import LanguageDropdown from "./LanguageDropdown"; // Import the dropdown component
 import { Popover } from "@headlessui/react";
 import { TbMenu2 } from "react-icons/tb";
 import { IoIosArrowUp } from "react-icons/io";
 import { navData } from "@/constants";
 import { AnimatePresence, motion } from "framer-motion";
+import { FaEnvelope } from "react-icons/fa";
 import Link from "next/link";
 
 const MobileNavLink = ({ children, ...props }) => {
   return (
     <Popover.Button
       as={Link}
-      className="block text-base leading-7 tracking-tight text-gray-700"
+      className="block text-base leading-7 tracking-tight text-white font-bold"
       {...props}
     >
       {children}
@@ -38,45 +40,44 @@ const Header = () => {
       return () => window.removeEventListener("scroll", handleScroll);
     }
   }, []);
+
   return (
     <header
-      className={`w-full sticky top-0 z-50 bg-white  ${
-        isScrolled && "shadow-xl shadow-blue-100"
+      className={`w-full top-0 z-50 bg-brandBlue ${
+        isScrolled && "shadow-xl shadow-brandBeige"
       }`}
     >
       <nav>
-        <Container className="relative z-50 flex justify-between py-8">
+        <Container className="relative z-50 flex items-center justify-between py-4">
           {/* Logo */}
-          <div className="relative z-10 flex items-center gap-16">
-            <Logo />
+          <div className="flex items-center">
+            <Logo className="h-16" />
           </div>
           {/* NavLinks */}
-          <div className="hidden lg:flex lg:gap-10 items-center">
+          <div className="hidden lg:flex lg:flex-1 lg:justify-center lg:items-center lg:gap-10">
             <NavLinks />
           </div>
           {/* Buttons */}
-          <div className="flex items-center gap-6">
-            <Button href="#" variant="outline" className="hidden lg:block">
-              Get Advice
-            </Button>
-            <Button href="#" className="hidden lg:block">
-              Hire me
-            </Button>
+          <div className="flex items-center gap-4">
+            {/* <Button variant="outline" color="brandBeige" href="mailto:your-email@example.com">
+                <FaEnvelope className="text-xl" />
+                <span className="ml-2.5 font-bold">Contact Us</span>
+              </Button> */}
+            <LanguageDropdown className="hidden lg:block" /> {/* Hide on smaller screens */}
+            
             {/* Mobile NavLinks */}
             <Popover className="lg:hidden">
               {({ open }) => (
                 <>
                   <Popover.Button
-                    className="relative z-10 -m-2 inline-flex items-center rounded-lg stroke-gray-900 p-2 hover:bg-gray-200/50 hover:stroke-gray-600 active:stroke-gray-900 [&:not(:focus-visible)]:focus:outline-none outline-none"
+                    className="relative z-10 -m-2 inline-flex items-center rounded-lg stroke-gray-900 p-2 hover:bg-brandBeige hover:stroke-gray-600 active:stroke-gray-900 [&:not(:focus-visible)]:focus:outline-none outline-none"
                     aria-label="Toggle site navigation"
                   >
-                    {({ open }) =>
-                      open ? (
-                        <IoIosArrowUp className="text-2xl" />
-                      ) : (
-                        <TbMenu2 className="text-2xl" />
-                      )
-                    }
+                    {open ? (
+                      <IoIosArrowUp className="text-2xl" />
+                    ) : (
+                      <TbMenu2 className="text-2xl" />
+                    )}
                   </Popover.Button>
                   <AnimatePresence initial={false}>
                     {open && (
@@ -99,20 +100,25 @@ const Header = () => {
                             y: -32,
                             transition: { duration: 0.2 },
                           }}
-                          className="absolute inset-x-0 top-0 z-0 origin-top rounded-b-2xl bg-gray-50 px-6 pb-6 pt-32 shadow-2xl shadow-gray-900/20"
+                          className="absolute inset-x-0 top-0 z-0 origin-top rounded-b-2xl bg-brandBlue px-6 pb-6 pt-32 shadow-2xl shadow-gray-900/20"
                         >
-                          <div className="space-y-4">
-                            {navData.map(({ _id, title, href }) => (
-                              <MobileNavLink href={href} key={_id}>
-                                {title}
-                              </MobileNavLink>
-                            ))}
-                          </div>
-                          <div className="mt-8 flex flex-col gap-4">
-                            <Button href="#" variant="outline">
-                              Get Advice
-                            </Button>
-                            <Button href="#">Hire me</Button>
+                          <div className="flex flex-col items-center">
+                            {/* Ensure the logo is present in mobile menu */}
+                            <Logo className="h-16 mb-4" />
+                            <div className="space-y-4">
+                              {navData.map(({ _id, title, href }) => (
+                                <MobileNavLink href={href} key={_id}>
+                                  {title}
+                                </MobileNavLink>
+                              ))}
+                            </div>
+                            <div className="mt-8 flex flex-col gap-4">
+                              
+                              <Button variant="outline" color="brandBeige" href="mailto:your-email@example.com">
+                                <FaEnvelope className="text-xl" />
+                                <span className="ml-2.5 font-bold">Contact Us</span>
+                              </Button>
+                            </div>
                           </div>
                         </Popover.Panel>
                       </>

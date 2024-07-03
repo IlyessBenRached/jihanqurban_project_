@@ -321,26 +321,44 @@ function InvestScreen({ custom, animated = false }) {
   );
 }
 
+
+
 export const features = [
   {
-    name: "Invite friends for better returns",
-    description:
-      "For every friend you invite to Investa, you get insider notifications 5 seconds sooner. And it is 10 seconds if you invite an insider.",
+    name: "JIHAN M. QURBAN",
+    description: (
+      <>
+        Jihan Mohammad Qurban is a distinguished legal consultant, providing expert legal advice and services to clients.
+        <div className="list-disc ml-5 mt-2 grid grid-cols-2 gap-x-4">
+          <span className="whitespace-normal">Legal Consultant</span>
+          <span className="whitespace-normal">Local Arbitrator</span>
+          <span className="whitespace-normal">International Arbitrator</span>
+          <span className="whitespace-normal">Member of Saudi Bar</span>
+          <span className="whitespace-normal">Pioneer Licensed Lawyer</span>
+          <span className="whitespace-normal">Legal Arbitrator</span>
+        </div>
+      </>
+    ),
     icon: DeviceUserIcon,
     screen: InviteScreen,
   },
   {
-    name: "Notifications on stock dips",
-    description:
-      "Get a push notification every time we find out something that is going to lower the share price on your holdings so you can sell before the information hits the public markets.",
+    name: "Our Leading Consultant",
+    description: (
+      <>
+        At the top of our elite team is legal consultant Adv. Isam Jabir Bahnassi, a University of Alexandria graduate.
+        <div className="list-disc ml-5 mt-2 grid grid-cols-2 gap-x-4">
+          <span className="whitespace-normal">Extensive Experience</span>
+          <span className="whitespace-normal">Highly Skilled</span>
+          <span className="whitespace-normal">Expert in Legal Consultancy</span>
+          <span className="whitespace-normal">Dedicated Professional</span>
+          <span className="whitespace-normal">Rich Legal Background</span>
+          <span className="whitespace-normal">Proven Track Record</span>
+        </div>
+      </>
+    ),
     icon: DeviceNotificationIcon,
     screen: StocksScreen,
   },
-  {
-    name: "Invest what you want",
-    description:
-      "We hide your stock purchases behind thousands of anonymous trading accounts, so suspicious activity can never be traced back to you.",
-    icon: DeviceTouchIcon,
-    screen: InvestScreen,
-  },
 ];
+

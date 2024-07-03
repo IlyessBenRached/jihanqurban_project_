@@ -7,135 +7,157 @@ import {
   DeviceChartIcon,
 } from "@/components/StockLogos";
 
+import Arbitration  from "@/images/Arbitration-V01-02.svg";
+import CivilCommercialLitigations  from "@/images/Civil&CommercialLitigations-V01-02.svg";
+import CivilStatusLaborLawsuits  from "@/images/CivilStatus&LaborLawsuits-V01-02.svg";
+import ContractsWillsDrafting  from "@/images/Contracts&WillsDrafting-V01-02.svg";
+import IncorporationTrademarkRegistration  from "@/images/Incorporation&TrademarkRegistration-V01-02.svg";
+import InheritanceFamilialDisputes  from "@/images/Inheritance&FamilialDisputes-V01-02.svg";
+import LegalConsultations  from "@/images/LegalConsultations-V01-02.svg";
+import Litigation  from "@/images/Litigation-V01-02.svg";
+
 export const navData = [
   { _id: 101, title: "Home", href: "#home" },
-  { _id: 102, title: "Features", href: "#features" },
-  { _id: 103, title: "Account", href: "#account" },
-  { _id: 104, title: "Reviews", href: "#reviews" },
+  { _id: 102, title: "Team", href: "#features" },
+  { _id: 103, title: "Services", href: "#account" },
+  { _id: 104, title: "Contact Us", href: "#reviews" },
 ];
 
 export const accountData = [
   {
-    name: "Invest any amount",
+    name: "Legal Consultations",
     description:
-      "Whether it is $1 or $1,000,000, we can put your money to work for you.",
-    icon: DeviceArrowIcon,
+      "Our team provides specialized legal consultations across all legal areas. We offer up-to-date advice on civil procedures, trade, real estate, family law, and corporate matters, helping clients understand their rights and protect their interests. We align our services with the latest developments in Saudi Arabia to support Vision 2030.",
+    icon: LegalConsultations,
   },
   {
-    name: "Build a balanced profile",
+    name: "Contracts & Wills Drafting",
     description:
-      "Invest in different industries to find the most opportunities to win huge.",
-    icon: DeviceCardsIcon,
+      "Our law firm specializes in drafting contracts and wills with precision and professionalism. This requires a deep understanding of local and international laws and regulations, which our competent team possesses. We ensure all details are meticulously listed to safeguard our clients' rights and interests.",
+    icon: LegalConsultations,
   },
   {
-    name: "Trade in real-time",
+    name: "Inheritance & Familial Disputes",
     description:
-      "Get insider tips on big stock moves and act on them within seconds.",
-    icon: DeviceClockIcon,
+      "Allocation of inheritance according to Islamic Sharia and Saudi Arabian law. We also resolve familial disputes arising from inheritance allocation, leveraging the practical and scientific expertise of our team.",
+    icon: LegalConsultations,
   },
   {
-    name: "Profit from your network",
+    name: "Litigation",
     description:
-      "Invite new insiders to get tips faster and beat even other Investa users.",
-    icon: DeviceListIcon,
+      "At our firm, we understand the importance of litigation. Our qualified and competent team of lawyers and consultants are dedicated to taking all necessary legal actions to protect our clients' rights and interests. We strive to provide the best representation services for individuals, companies, and establishments.",
+    icon: LegalConsultations,
   },
   {
-    name: "Encrypted and anonymized",
+    name: "Civil & Commercial Litigations",
     description:
-      "Cutting-edge security technology that even the NSA does not know about keeps you hidden.",
-    icon: DeviceLockIcon,
+      "We specialize in civil and commercial litigation, providing expert follow-up and representation in various conflicts. Our competent team offers legal consultation and develops strong strategies to resolve disputes quickly and protect our clients, whether the issue involves commercial contracts, labor lawsuits, real estate disputes, or other matters.",
+    icon: LegalConsultations,
   },
   {
-    name: "Progress tracking",
+    name: "Incorporation & Trademark Registration",
     description:
-      "Watch your investments grow exponentially, leaving other investors in the dust.",
-    icon: DeviceChartIcon,
+      "We provide expert services for incorporating companies and registering names and trademarks. Our team supports clients from choosing the company type to final registration and obtaining licenses. We also help safeguard commercial rights through trademark registration and assist in converting establishments into companies and vice versa.",
+    icon: LegalConsultations,
+  },
+  {
+    name: "Arbitration",
+    description:
+      "Arbitration is a preferred method for investors and large commercial companies to resolve conflicts quickly. As a pioneer firm in commercial dispute arbitration, we are certified arbitrators in both local and international centers. We represent clients and serve as arbitrators, handling everything from preparing arbitration documents and attending hearings to passing judgments.",
+    icon: LegalConsultations,
+  },
+  {
+    name: "Civil Status & Labor Lawsuits",
+    description:
+      "We offer specialized services for civil status and labor lawsuits. Our team provides legal support for matters such as marriage, divorce, alimony, custody, and inheritance. We aim to provide efficient, personalized legal solutions. Additionally, we represent clients in employment disputes, whether employee or employer, ensuring comprehensive support for fair and easy settlements.",
+    icon: LegalConsultations,
   },
 ];
 
 export const reviews = [
   {
-    title: "It really works.",
-    body: "I downloaded Investa today and turned $5000 into $25,000 in half an hour.",
-    author: "CrazyInvestor",
+    title: "Outstanding Service!",
+    body: "Jihan Qurban Law Firm helped me navigate a complex legal issue with ease and professionalism. Highly recommend their services!",
+    author: "SatisfiedClient123",
     rating: 5,
   },
   {
-    title: "You need this app.",
-    body: "I did not understand the stock market at all before Investa. I still do not, but at least I am rich now.",
-    author: "CluelessButRich",
+    title: "Professional and Efficient",
+    body: "The team at Jihan Qurban Law Firm is incredibly professional and efficient. They handled my case with great care and attention to detail.",
+    author: "HappyClient456",
     rating: 5,
   },
   {
-    title: "This should not be legal.",
-    body: "Investa makes it so easy to win big in the stock market that I can not believe it is actually legal.",
-    author: "LivingDaDream",
+    title: "Exceptional Legal Advice",
+    body: "I received exceptional legal advice from Jihan Qurban Law Firm. Their expertise and dedication were evident throughout the process.",
+    author: "LegalEagle789",
     rating: 4,
   },
   {
-    title: "Screw financial advisors.",
-    body: "I barely made any money investing in mutual funds. With Investa, I am doubling my net-worth every single month.",
-    author: "JordanBelfort1962",
+    title: "Highly Skilled Lawyers",
+    body: "The lawyers at Jihan Qurban Law Firm are highly skilled and knowledgeable. They provided excellent representation in my legal matter.",
+    author: "ClientWithGratitude",
     rating: 5,
   },
   {
-    title: "I love it!",
-    body: "I started providing insider information myself and now I get new insider tips every 5 minutes. I do not even have time to act on all of them. New Lamborghini is being delivered next week!",
-    author: "MrBurns",
-    rating: 3,
-  },
-  {
-    title: "Too good to be true.",
-    body: "I was making money so fast with Investa that it felt like a scam. But I sold my shares and withdrew the money and it is really there, right in my bank account. This app is crazy!",
-    author: "LazyRich99",
-    rating: 2,
-  },
-  {
-    title: "Wish I could give 6 stars",
-    body: "This is literally the most important app you will ever download in your life. Get on this before it is so popular that everyone else is getting these tips too.",
-    author: "SarahLuvzCash",
-    rating: 5,
-  },
-  {
-    title: "Bought an island.",
-    body: "Yeah, you read that right. Want your own island too? Get Investa.",
-    author: "ScroogeMcduck",
-    rating: 5,
-  },
-  {
-    title: "No more debt!",
-    body: "After 2 weeks of trading on Investa I was debt-free. Why did I even go to school at all when Investa exists?",
-    author: "BruceWayne",
-    rating: 1,
-  },
-  {
-    title: "I am 13 and I am rich.",
-    body: "I love that with Investa transaction anonymization I could sign up and start trading when I was 12 years old. I had a million dollars before I had armpit hair!",
-    author: "RichieRich",
-    rating: 5,
-  },
-  {
-    title: "Started an investment firm.",
-    body: "I charge clients a 3% management fee and just throw all their investments into Investa. Easy money!",
-    author: "TheCountOfMonteChristo",
-    rating: 5,
-  },
-  {
-    title: "It is like a superpower.",
-    body: "Every tip Investa has sent me has paid off. It is like playing Blackjack but knowing exactly what card is coming next!",
-    author: "ClarkKent",
+    title: "Responsive and Supportive",
+    body: "Jihan Qurban Law Firm was always responsive and supportive. They made sure I was informed and comfortable every step of the way.",
+    author: "GratefulClient001",
     rating: 4,
   },
   {
-    title: "Quit my job.",
-    body: "I downloaded Investa three days ago and quit my job today. I can not believe no one else thought to build a stock trading app that works this way!",
-    author: "GeorgeCostanza",
+    title: "Exceeded Expectations",
+    body: "The service I received from Jihan Qurban Law Firm exceeded my expectations. Their commitment to client satisfaction is truly commendable.",
+    author: "ImpressedClient202",
     rating: 5,
   },
   {
-    title: "Do not download this app",
-    body: "Unless you want to have the best life ever! I am literally writing this from a yacht.",
-    author: "JeffBezos",
-    rating: 3,
+    title: "Top-notch Legal Representation",
+    body: "If you're looking for top-notch legal representation, look no further than Jihan Qurban Law Firm. They are simply the best.",
+    author: "EliteClient303",
+    rating: 5,
+  },
+  {
+    title: "Thorough and Detail-oriented",
+    body: "Jihan Qurban Law Firm is thorough and detail-oriented. They left no stone unturned in handling my case.",
+    author: "MeticulousClient404",
+    rating: 5,
+  },
+  {
+    title: "Highly Recommend",
+    body: "I highly recommend Jihan Qurban Law Firm for any legal needs. Their expertise and dedication are unmatched.",
+    author: "ClientForLife505",
+    rating: 5,
+  },
+  {
+    title: "Excellent Communication",
+    body: "The communication from Jihan Qurban Law Firm was excellent. They kept me informed and updated throughout the entire process.",
+    author: "InformedClient606",
+    rating: 4,
+  },
+  {
+    title: "Trustworthy and Reliable",
+    body: "I found Jihan Qurban Law Firm to be trustworthy and reliable. They handled my case with the utmost professionalism.",
+    author: "TrustingClient707",
+    rating: 5,
+  },
+  {
+    title: "Outstanding Legal Team",
+    body: "The legal team at Jihan Qurban Law Firm is outstanding. They provided exceptional service and achieved a great outcome for my case.",
+    author: "SuccessfulClient808",
+    rating: 5,
+  },
+  {
+    title: "Compassionate and Understanding",
+    body: "Jihan Qurban Law Firm is compassionate and understanding. They genuinely care about their clients and their well-being.",
+    author: "CaringClient909",
+    rating: 4,
+  },
+  {
+    title: "Efficient and Effective",
+    body: "The team at Jihan Qurban Law Firm is efficient and effective. They resolved my legal issue quickly and satisfactorily.",
+    author: "SwiftClient010",
+    rating: 4,
   },
 ];
+

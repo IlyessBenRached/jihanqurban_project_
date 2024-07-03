@@ -1,18 +1,14 @@
 import Link from "next/link";
 import clsx from "clsx";
+import Image from "next/image";
+import LogoImage from "@/images/logos/Logo_1-01.svg"; // Update this path if needed
 
-const Logo = ({ className, props }) => {
+const Logo = ({ className, ...props }) => {
   return (
     <Link href={"/"}>
-      <h2
-        className={clsx(
-          "text-3xl font-bold text-gray-600 hover:text-gray-900 duration-300",
-          className
-        )}
-        {...props}
-      >
-        Investa
-      </h2>
+      <div className={clsx("inline-flex items-center h-full", className)} {...props}>
+        <Image src={LogoImage} alt="Jihan M. Qurban Law Firm Logo" width={350} height={150} />
+      </div>
     </Link>
   );
 };

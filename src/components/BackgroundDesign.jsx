@@ -29,8 +29,8 @@ const BackgroundDesign = (props) => {
             y2="1025"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="#06b6d4" />
-            <stop offset="1" stopColor="#06b6d4" stopOpacity="0" />
+            <stop stopColor="#C3AA8B" />
+            <stop offset="1" stopColor="#C3AA8B" stopOpacity="0" />
           </linearGradient>
         </defs>
       </svg>
@@ -59,8 +59,8 @@ const BackgroundDesign = (props) => {
             y2="913"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="#06b6d4" />
-            <stop offset="1" stopColor="#06b6d4" stopOpacity="0" />
+            <stop stopColor="#C3AA8B" />
+            <stop offset="1" stopColor="#C3AA8B" stopOpacity="0" />
           </linearGradient>
         </defs>
       </svg>

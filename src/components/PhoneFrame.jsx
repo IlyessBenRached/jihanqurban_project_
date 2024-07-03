@@ -1,8 +1,8 @@
 import Image from "next/image";
 import clsx from "clsx";
-import frame from "@/images/phone-frame.svg";
+import frame from "@/images/jihan_photo.jpeg";
 
-const PlaceholderFrame = (props) => {
+/* const PlaceholderFrame = (props) => {
   return (
     <svg viewBox="0 0 366 729" aria-hidden="true" {...props}>
       <path
@@ -14,20 +14,20 @@ const PlaceholderFrame = (props) => {
       <rect x="154" y="29" width="56" height="5" rx="2.5" fill="#D4D4D4" />
     </svg>
   );
-};
+}; */
 
 const PhoneFrame = ({ className, children, priority = false, ...props }) => {
   return (
-    <div className={clsx("relative aspect-[366/729]", className)} {...props}>
+    <div className={clsx("relative aspect-[366/729] w-full max-w-[366px] mx-auto", className)} {...props}>
       <div className="absolute inset-y-[calc(1/729*100%)] left-[calc(7/729*100%)] right-[calc(5/729*100%)] rounded-[calc(58/366*100%)/calc(58/729*100%)] shadow-2xl" />
       <div className="absolute left-[calc(23/366*100%)] top-[calc(23/729*100%)] grid h-[calc(686/729*100%)] w-[calc(318/366*100%)] transform grid-cols-1 overflow-hidden bg-gray-900 pt-[calc(23/318*100%)]">
         {children}
       </div>
-      <PlaceholderFrame className="pointer-events-none absolute inset-0 h-full w-full fill-gray-100" />
+      {/* <PlaceholderFrame className="pointer-events-none absolute inset-0 h-full w-full fill-gray-100" /> */}
       <Image
         src={frame}
         alt="frame"
-        className="pointer-events-none absolute inset-0 h-full w-full"
+        className="pointer-events-none absolute inset-0 h-full w-full object-cover"
         unoptimized
         priority={priority}
       />

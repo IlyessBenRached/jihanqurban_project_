@@ -42,7 +42,7 @@ const DesktopFeature = () => {
         {features.map((feature, featureIndex) => (
           <div
             key={feature.name}
-            className="relative rounded-2xl transition-colors hover:bg-gray-800/30"
+            className="relative rounded-2xl transition-colors hover:bg-brandBlue"
           >
             {featureIndex === selectedIndex && (
               <motion.div
@@ -52,23 +52,22 @@ const DesktopFeature = () => {
               />
             )}
             <div className="relative z-10 p-8">
-              <feature.icon className="h-8 w-8" />
-              <h3 className="mt-6 text-lg font-semibold text-white">
+              <h3 className="mt-6 text-lg font-bold text-brandBeige">
                 <Tab className="text-left [&:not(:focus-visible)]:focus:outline-none outline-none">
                   <span className="absolute inset-0 rounded-2xl" />
                   {feature.name}
                 </Tab>
               </h3>
-              <p className="mt-2 text-sm text-gray-400">
+              <div className="mt-2 text-sm text-white space-y-1">
                 {feature.description}
-              </p>
+              </div>
             </div>
           </div>
         ))}
       </Tab.List>
       <div className="relative col-span-6">
         <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-          <CircleBackground color="#2563eb" className="animate-spin-slower" />
+          <CircleBackground color="#C3AA8B" className="animate-spin-slower" />
         </div>
         <PhoneFrame className="z-10 mx-auto w-full max-w-[366px]">
           <Tab.Panels as={Fragment}>
@@ -154,13 +153,13 @@ export const FeatureMobile = () => {
                 <feature.screen />
               </PhoneFrame>
               <div className="absolute inset-x-0 bottom-0 bg-gray-800/95 p-6 backdrop-blur sm:p-10">
-                <feature.icon className="h-8 w-8" />
+                {/* <feature.icon className="h-8 w-8" /> */}
                 <h3 className="mt-6 text-sm font-semibold text-white sm:text-lg">
                   {feature.name}
                 </h3>
-                <p className="mt-2 text-sm text-gray-400">
+                <div className="mt-2 text-sm text-gray-400 space-y-1">
                   {feature.description}
-                </p>
+                </div>
               </div>
             </div>
           </div>
